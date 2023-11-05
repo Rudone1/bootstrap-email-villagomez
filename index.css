@@ -1,0 +1,18 @@
+.clickables {
+list-style-type: none;
+}
+
+small-collumns{
+    background-color: #7bc1e9;
+
+    }
+.profile {
+    max-width: 60%;
+    height: 6vh ;
+    border-radius: 50%;
+}
+ .img{
+    max-width: 20%;
+    height: auto;
+
+    }
