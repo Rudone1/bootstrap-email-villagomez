@@ -15,63 +15,239 @@
 </head>
 
 <body>
-    <!--navbar sm-->
-    <div class="container-sm small-columns">
-        <div class="row d-flex flex-nowrap ">
-            <div class="col-sm-auto d-xl-none">
-            <!--Offcanvas hamburger-->
-                <a class="btn btn-default" data-bs-toggle="offcanvas" href="#myoffcanvas" role="button" aria-controls="offcanvas">
-                    <i class="fa-solid fa-bars"> </i>
-                </a>
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="myoffcanvas" aria-labelledby="myoffcanvaslabel">
-                    <div class="offcanvas-header">
-                        <img src="Birb.png" alt="picture of a bird holding papers" class="birb">
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <div> 
-                            <ul class="clickables">
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
+    <header class="nav-color">
+        <!--navbar sm-->
+        <div class="container-fluid d-flex flex-column small-columns">
+            <div class="row d-flex align-items-center justify-content-between">
+                <div class="col-auto d-xl-none">
+                    <!--Offcanvas hamburger-->
+                    <a class="btn btn-default" data-bs-toggle="offcanvas" href="#myoffcanvas" role="button"
+                        aria-controls="offcanvas">
+                        <i class="fa-solid fa-bars"> </i>
+                    </a>
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="myoffcanvas"
+                        aria-labelledby="myoffcanvaslabel">
+                        <div class="offcanvas-header offcanvas-head">
+                            <img src="Birb.png" alt="picture of a bird holding papers" class="birb">
+                            <h2 class="offcanvas-brand">
+                                NewsCoo
+                            </h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div>
+                                <ul class="clickables-xl">
+                                    <li><i class="fa-solid fa-envelope fa-xl"></i></li>
+                                </ul>
+                                <ul class="clickables-xl">
+                                    <li><i class="fa-solid fa-circle-exclamation fa-xl"></i></li>
+                                </ul>
+                                <ul class="clickables-xl">
+                                    <li><i class="fa-solid fa-trash-can fa-xl"></i></li>
+                                </ul>
+                                <ul class="clickables-xl">
+                                    <li><i class="fa-solid fa-exclamation fa-xl"></i></li>
+                                </ul>
+                                <ul class="clickables-xl">
+                                    <li></li><i class="fa-solid fa-paper-plane fa-xl"></i></li>
+                                </ul>
+                                <ul class="clickables-xl">
+                                    <li><i class="fa-regular fa-file fa-xl"></i></li>
+                                </ul>
+                            </div>
+                            <div class="d-flex flex-column justify-content-end create">
+                                <ul class="clickables-xl">
+                                    <li><i class="fa-solid fa-square-plus fa-xl"></i></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-                
+                <!--Logo XL-->
+                <div class="d-none d-xl-flex col-xl-auto ms-2">
+                    <div class="logo-xl">
+                        <img src="Birb.png" alt="picture of a bird holding papers" class="birb-xl"> NewsCoo
+                    </div>
+
+                </div>
+                <!--Search Bar-->
+                <div class="col-3">
+                    <input type="search" placeholder="Search..." class="rounded Search-bar">
+                </div>
+                <!--Profile-->
+                <div class="col-auto">
+                    <div>
+                        <button class="btn btn-default btn-sm dropdown toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="profile.png" alt="Strawhat Jolly rodger" class="profile">
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li><a class="dropdown-item" href="#">Add an Account</a></li>
+                            <li><a class="dropdown-item" href="#">Manage Accounts</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <!--Search Bar-->
-            <div class="col-sm d-xl-none">
-                <input type="search" placeholder="Search...">
-            </div>
-            <div class="col-sm d-xl-none">
+        </div>
+    </header>
+    <!--body-->
+    <!--Sidebar XL-->
+    <div class="row">
+        <div class="d-none d-xl-flex col-xl-1 mt-3 flex-column justify-content-start">
+            <div class="container">
                 <div>
-                <button class="btn btn-default btn-sm dropdown toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="profile.png" alt="Strawhat Jolly rodger" class="profile">
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Profile</a></li>
-                    <li><a class="dropdown-item" href="#">Settings</a></li>
-                    <li><a class="dropdown-item" href="#">Add an Account</a></li>
-                    <li><a class="dropdown-item" href="#">Manage Accounts</a></li>
-                </ul>
+                    <ul class="clickables-xl">
+                        <li><i class="fa-solid fa-envelope fa-xl"></i></li>
+                    </ul>
+                    <ul class="clickables-xl">
+                        <li><i class="fa-solid fa-circle-exclamation fa-xl"></i></li>
+                    </ul>
+                    <ul class="clickables-xl">
+                        <li><i class="fa-solid fa-trash-can fa-xl"></i></li>
+                    </ul>
+                    <ul class="clickables-xl">
+                        <li><i class="fa-solid fa-exclamation fa-xl"></i></li>
+                    </ul>
+                    <ul class="clickables-xl">
+                        <li></li><i class="fa-solid fa-paper-plane fa-xl"></i></li>
+                    </ul>
+                    <ul class="clickables-xl">
+                        <li><i class="fa-regular fa-file fa-xl"></i></li>
+                    </ul>
+                </div>
+                <div class="d-flex flex-column justify-content-end create">
+                    <ul class="clickables-xl">
+                        <li><i class="fa-solid fa-square-plus fa-xl"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--Inbox Cards-->
+
+        <div class="col-11 col-sm-10 col-md-4 mt-3 ms-4 ">
+            <div class="scrollable-close-e">
+                <div class="card-outline">
+                    <div class="row">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">JohnDoe23@gmail.com</h5>
+                                <h6 class="card-subtitle ">important!!!!!</h6>
+                                <p class="card-text">blah blah blah </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-outline">
+                    <div class="row">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">JohnDoe23@gmail.com</h5>
+                                <h6 class="card-subtitle ">important!!!!!</h6>
+                                <p class="card-text">blah blah blah </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-outline">
+                    <div class="row">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">JohnDoe23@gmail.com</h5>
+                                <h6 class="card-subtitle ">important!!!!!</h6>
+                                <p class="card-text">blah blah blah </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-outline">
+                    <div class="row">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">JohnDoe23@gmail.com</h5>
+                                <h6 class="card-subtitle ">important!!!!!</h6>
+                                <p class="card-text">blah blah blah </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-outline">
+                    <div class="row">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">JohnDoe23@gmail.com</h5>
+                                <h6 class="card-subtitle ">important!!!!!</h6>
+                                <p class="card-text">blah blah blah </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-outline">
+                    <div class="row">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">JohnDoe23@gmail.com</h5>
+                                <h6 class="card-subtitle ">important!!!!!</h6>
+                                <p class="card-text">blah blah blah </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-outline">
+                    <div class="row">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">JohnDoe23@gmail.com</h5>
+                                <h6 class="card-subtitle ">important!!!!!</h6>
+                                <p class="card-text">blah blah blah </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--Open Email-->
+        <div class="d-none d-md-block col-md-7 col-xl-6 email mt-3 rounded d-flex justify-content-center">
+            <div class="email-header rounded ps-5">
+                <div class="card">
+                    <div class="card-header pt-4">
+                        <p><img src="World-Gov.webp" alt="One Piece World government logo" class="profile me-3 ">
+                            <strong>WorldGovNavy</strong>
+                        <p class="email-subtitle"><em>->world-gov-navy@123.com<- Nov 26, 2023 3:41 AM</em></p>
+                        </p>
+                    </div>
+                    <div class="scrollable-open-e">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Subject:</strong>
+                                <h5>
+                                    <img src="Luffy!!!!!.jpg" alt="luffy wanted poster" class="poster">
+                        </div>
+                        <div class="card-footer">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Reply</h5>
+                                    <textarea placeholder="" rows="4" cols="80">
+                                        
+                                    </textarea>
+                                    <a href="#" class="idk"><i class="fa-solid fa-share-from-square fa-lg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
-
-<div class="container-sm-4">
-    <div class="row d-flex ">
-        <div class="col-sm d-xl-none">
-
-        </div>
     </div>
-</div>
-
-
-
 
 
 

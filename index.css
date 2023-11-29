@@ -1,18 +1,79 @@
+body{
+    overflow: hidden;
+}
 .clickables {
 list-style-type: none;
 }
 
-.small-columns{
+.clickables-xl {
+    list-style-type: none;
+    height: 30px;
+    }
+    .create {
+        height: 360px;
+    }
+
+.nav-color{
     background-color: #7bc1e9;
 
     }
 .profile {
-    max-width: 60%;
+    max-width: 70%;
     height: 6vh ;
     border-radius: 50%;
+    border: 2px solid black;
 }
- .img{
+ .birb {
     max-width: 20%;
     height: auto;
-
     }
+    .birb-xl{
+        max-width: 30%;
+        height:auto
+    }
+    .logo-xl{
+        font-size: 90%;
+        font-style: italic;
+        font-weight: 500;
+    }
+    .poster {
+        display: flex;
+        justify-content: center;
+        max-width: 60%;
+        height:auto
+    }
+
+    .search-bar{
+        max-height: 20%;
+        width: auto;
+    }
+    .offcanvas-head{
+        background-color: #7bc1e9;
+    }
+    .offcanvas-body{
+        =width: 30%;
+        height: 100%;
+    }
+
+    .offcanvas-brand{
+        font-style: italic;
+        font-weight: 500;
+    }
+
+    .email-subtitle{
+        font-size: small;
+    }
+    .scrollable-open-e{
+        overflow-y: scroll;
+        height: 500px;
+    }
+
+    .scrollable-close-e {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        height: 635px;
+
+     }
+     .highlighted-card{
+        color: gray;
+     }
